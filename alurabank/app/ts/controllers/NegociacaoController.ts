@@ -1,5 +1,6 @@
 import{ NegociacoesView, MensagemView } from '../views/index';
 import{ Negociacoes, Negociacao} from '../models/index';
+import {logarTempoDeExecucao} from '../helpers/decorators/index';
 
 
 
