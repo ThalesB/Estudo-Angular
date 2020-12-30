@@ -1,5 +1,5 @@
-   
-   import{ Negociacao } from './Negociacao';
+
+ import{ Negociacao } from './Negociacao';
    
    export class Negociacoes{
 
@@ -10,11 +10,13 @@
 
         this._negociacoes.push(negociacao);
     }
+  
+    
 
     paraArray(): Negociacao[] {
 
         return ([] as Negociacao[]).concat(this._negociacoes);
 
     }
-
+   
 }
