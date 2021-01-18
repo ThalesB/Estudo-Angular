@@ -1,9 +1,10 @@
-export class Negociacao {
+import {Imprimivel} from './Imprimivel';
+
+export class Negociacao implements Imprimivel {
  
  
   
-  constructor(readonly data: Date, readonly quantidade: number, readonly valor: number) { 
-    
+  constructor(readonly data: Date, readonly quantidade: number, readonly valor: number) {
   }
  
  
@@ -14,6 +15,18 @@ export class Negociacao {
   }
 
 
-  
+
+    paraTexto():void {
+
+    console.log(
+        `Data: ${this.data}
+         Quantidade: ${this.quantidade}
+         Valor: ${this.valor}
+         Volume: ${this.volume}`
+
+
+    )
+
+  }
 
 }
